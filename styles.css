@@ -14,7 +14,6 @@
 body {
 	font-family: var(--default-font);
 	font-size: var(--default-font-size);
-	padding: 40px;
 	transition: all .5s ease;
 }
 
@@ -23,9 +22,9 @@ body, main {
 }
 
 main {
-	/*display: flex;
-	justify-content: center;
-	align-items: center;*/
+	padding: 40px;
+	position: relative;
+	overflow-x: hidden;
 }
 
 main h1, main h2 {
@@ -34,12 +33,52 @@ main h1, main h2 {
 	font-weight: 500;
 }
 
+main .img {
+	height: 60px;
+	width: 60px;
+	position: absolute;
+	display: block;
+}
+
+main .img-1 {
+	right: 30%;
+}
+
+main .img-2 {
+	left: 30%;
+}
+
+main .img-3 {
+	left: 30%;
+}
+
+main .img-4 {
+	right: 30%;
+}
+
+main .img-5 {
+	right: 30%;
+}
+
+main .img-6 {
+	left: 30%;
+}
+
+main .img-7 {
+	right: 30%;
+}
+
+main .img-8 {
+	left: 30%;
+} 
+
 table {
 	margin-bottom: 30px;
 	width: 500px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 }
 
 table th {
@@ -57,14 +96,18 @@ td {
 	border-bottom: 2px solid #000;
 }
 
+.googlemap {
+	width: 100%;
+}
+
 @media screen and (max-width: 600px) {
-	body {
+	main {
 		padding: 20px;
 	}
 }
 
 @media screen and (max-width: 550px) {
-	body {
+	main {
 		padding: 10px;
 		font-size: 16px;
 	}
