@@ -100,6 +100,12 @@ td {
 	width: 100%;
 }
 
+@media screen and (max-width: 1300px) {
+	img {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 600px) {
 	main {
 		padding: 20px;
